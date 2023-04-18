@@ -26,7 +26,7 @@ discord.on('messageCreate', (message)=>{
 });
 
 // 部分伺服器會需要 HTTP Endpoint
-const app = express;
+const app = express();
 
 app.get('/', (req, res)=> res.send('express on'));
 app.listen(PORT, ()=> console.log(`listening on ${PORT}`));
