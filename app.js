@@ -13,7 +13,7 @@ const { bothMessages } = require('./services');
 discord.login(DISCORD_BOT_TOKEN);
 
 discord.once('ready', (e)=>{
-  console.log(`logged in as ${c.user.tag} `);
+  console.log(`logged in as ${e.user.tag} `);
 })
 
 discord.on('messageCreate', (message)=>{
